@@ -22,7 +22,7 @@ let arrTwo = [
 ];
 
 let flattenArray = function (array) {
-    let result = [].concat(arrTwo[0], arrTwo[1], arrTwo[2]);
+    let result = [].flat();
     return result;
 };
 
@@ -38,9 +38,9 @@ let userString = () => {
 };
 
 let palindrome = function (str) {
-    let arr = str.split("");
-    let arrReverse = arr.reverse();
-    return arr === arrReverse;
+    str = str.toLowerCase();
+    let strReverse = str.toLowerCase().split("").reverse().join("");
+    return str === strReverse;
 };
 console.log(palindrome(userString()));
 
