@@ -22,11 +22,11 @@ let arrTwo = [
 ];
 
 let flattenArray = function (array) {
-    let result = [].flat();
+    let result = array.flat();
     return result;
 };
 
-console.log(flattenArr(arrTwo));
+console.log(flattenArray(arrTwo));
 
 //task 2
 let userString = () => {
